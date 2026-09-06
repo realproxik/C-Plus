@@ -1,0 +1,100 @@
+Start testing: Sep 05 08:00 India Standard Time
+----------------------------------------------------------
+1/6 Testing: csp.frontend
+1/6 Test: csp.frontend
+Command: "C:/Users/DeLL/Desktop/C+/build/csp_frontend_tests.exe"
+Directory: C:/Users/DeLL/Desktop/C+/build
+"csp.frontend" start time: Sep 05 08:00 India Standard Time
+Output:
+----------------------------------------------------------
+all C+ frontend tests passed
+<end of output>
+Test time =  11.35 sec
+----------------------------------------------------------
+Test Passed.
+"csp.frontend" end time: Sep 05 08:01 India Standard Time
+"csp.frontend" time elapsed: 00:00:11
+----------------------------------------------------------
+
+2/6 Testing: csp.headers
+2/6 Test: csp.headers
+Command: "C:/Users/DeLL/Desktop/C+/build/csp_header_smoke.exe"
+Directory: C:/Users/DeLL/Desktop/C+/build
+"csp.headers" start time: Sep 05 08:01 India Standard Time
+Output:
+----------------------------------------------------------
+<end of output>
+Test time =   0.06 sec
+----------------------------------------------------------
+Test Passed.
+"csp.headers" end time: Sep 05 08:01 India Standard Time
+"csp.headers" time elapsed: 00:00:00
+----------------------------------------------------------
+
+3/6 Testing: csp.codegen.manifest
+3/6 Test: csp.codegen.manifest
+Command: "C:/Users/DeLL/AppData/Local/Python/pythoncore-3.14-64/python.exe" "C:/Users/DeLL/Desktop/C+/tests/codegen/run.py" "--validate-only"
+Directory: C:/Users/DeLL/Desktop/C+/build
+"csp.codegen.manifest" start time: Sep 05 08:01 India Standard Time
+Output:
+----------------------------------------------------------
+validated 5094 CSP code-generation cases across 85 case folders
+<end of output>
+Test time =  13.40 sec
+----------------------------------------------------------
+Test Passed.
+"csp.codegen.manifest" end time: Sep 05 08:01 India Standard Time
+"csp.codegen.manifest" time elapsed: 00:00:13
+----------------------------------------------------------
+
+4/6 Testing: csp.semantic.valid-overloads
+4/6 Test: csp.semantic.valid-overloads
+Command: "C:/Users/DeLL/Desktop/C+/build/cspc.exe" "C:/Users/DeLL/Desktop/C+/tests/semantic/valid_overloads.csp" "--check"
+Directory: C:/Users/DeLL/Desktop/C+/build
+"csp.semantic.valid-overloads" start time: Sep 05 08:01 India Standard Time
+Output:
+----------------------------------------------------------
+C+ syntax and semantic checks passed
+<end of output>
+Test time =   5.99 sec
+----------------------------------------------------------
+Test Passed.
+"csp.semantic.valid-overloads" end time: Sep 05 08:01 India Standard Time
+"csp.semantic.valid-overloads" time elapsed: 00:00:05
+----------------------------------------------------------
+
+5/6 Testing: csp.semantic.reject-cross-function-goto
+5/6 Test: csp.semantic.reject-cross-function-goto
+Command: "C:/Users/DeLL/Desktop/C+/build/cspc.exe" "C:/Users/DeLL/Desktop/C+/tests/semantic/invalid_cross_function_goto.csp" "--check"
+Directory: C:/Users/DeLL/Desktop/C+/build
+"csp.semantic.reject-cross-function-goto" start time: Sep 05 08:01 India Standard Time
+Output:
+----------------------------------------------------------
+C:/Users/DeLL/Desktop/C+/tests/semantic/invalid_cross_function_goto.csp:2:5: error: goto targets unknown label 'finished'
+cspc: error: semantic analysis failed
+<end of output>
+Test time =   0.07 sec
+----------------------------------------------------------
+Test Passed.
+"csp.semantic.reject-cross-function-goto" end time: Sep 05 08:01 India Standard Time
+"csp.semantic.reject-cross-function-goto" time elapsed: 00:00:00
+----------------------------------------------------------
+
+6/6 Testing: csp.semantic.reject-duplicate-default
+6/6 Test: csp.semantic.reject-duplicate-default
+Command: "C:/Users/DeLL/Desktop/C+/build/cspc.exe" "C:/Users/DeLL/Desktop/C+/tests/semantic/invalid_duplicate_default.csp" "--check"
+Directory: C:/Users/DeLL/Desktop/C+/build
+"csp.semantic.reject-duplicate-default" start time: Sep 05 08:01 India Standard Time
+Output:
+----------------------------------------------------------
+C:/Users/DeLL/Desktop/C+/tests/semantic/invalid_duplicate_default.csp:6:5: error: switch cannot contain more than one default label
+cspc: error: semantic analysis failed
+<end of output>
+Test time =   0.03 sec
+----------------------------------------------------------
+Test Passed.
+"csp.semantic.reject-duplicate-default" end time: Sep 05 08:01 India Standard Time
+"csp.semantic.reject-duplicate-default" time elapsed: 00:00:00
+----------------------------------------------------------
+
+End testing: Sep 05 08:01 India Standard Time

@@ -1,0 +1,26 @@
+{
+  "name": "csp-language-support",
+  "displayName": "C+ Language Support",
+  "description": "C+ language and .csp file icon support.",
+  "version": "0.2.0",
+  "publisher": "csp-foundation",
+  "engines": { "vscode": "^1.85.0" },
+  "categories": ["Programming Languages"],
+  "contributes": {
+    "languages": [
+      {
+        "id": "csp",
+        "aliases": ["C+", "csp"],
+        "extensions": [".csp"],
+        "configuration": "./language-configuration.json"
+      }
+    ],
+    "iconThemes": [
+      {
+        "id": "csp-file-icons",
+        "label": "C+ File Icons",
+        "path": "./csp-icon-theme.json"
+      }
+    ]
+  }
+}
